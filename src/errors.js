@@ -6,6 +6,7 @@ class HttpError extends Error {
 
     if (Error.captureStackTrace) {
       Error.captureStackTrace(this, HttpError);
+      ("/sd");
     }
 
     this.message = message;

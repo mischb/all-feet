@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "knex.js", "knexfile.js"],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": false,
+    "outDir": "dist",
+    "allowJs": true
+  }
+}
