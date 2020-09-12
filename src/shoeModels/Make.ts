@@ -2,6 +2,7 @@ export default class Make {
   protected id: number;
   private name: string;
   private models: Array<number>;
+  private mdfasdf: string;
 
   constructor($name: string) {
     this.id = Date.now() + Math.floor(Math.random() * 1000);

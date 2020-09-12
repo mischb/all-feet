@@ -3,11 +3,19 @@ class User {
   private email: string;
   private firstName: string;
   private lastName: string;
-  constructor(email: string, firstName: string, lastName: string) {
+  private password: string;
+
+  constructor(
+    email: string,
+    password: string,
+    firstName: string,
+    lastName: string
+  ) {
     this.id = Date.now() + Math.floor(Math.random() * 1000);
     this.email = email;
     this.firstName = firstName;
     this.lastName = lastName;
+    this.password = password;
   }
   /**
    * Getter $id

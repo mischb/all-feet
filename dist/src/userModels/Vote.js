@@ -2,11 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Vote = void 0;
 class Vote {
-    constructor($userId, $modelId, $size, $width) {
-        this.userId = $userId;
-        this.modelId = $modelId;
-        this.size = $size;
-        this.width = $width;
+    constructor(modelId, size, width, userId) {
+        this.id = Date.now() + Math.floor(Math.random() * 1000);
+        this.userId = userId;
+        this.modelId = modelId;
+        this.size = size;
+        this.width = width;
     }
     /**
      * Getter $userId
@@ -42,13 +43,6 @@ class Vote {
      */
     get $width() {
         return this.width;
-    }
-    /**
-     * Setter $userId
-     * @param {string} value
-     */
-    set $userId(value) {
-        this.userId = value;
     }
     /**
      * Setter $modelId
